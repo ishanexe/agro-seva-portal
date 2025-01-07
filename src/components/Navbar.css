@@ -1,0 +1,90 @@
+/* src/components/Navbar.css */
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Keep items spaced evenly */
+    align-items: center;
+    background-color: #f7f7f7; /* Background color */   
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Add shadow here */
+}
+
+.navbar-logo {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+.navbar-links {
+    font-size: large;
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased gap for better spacing */
+    margin-left: 30px; /* Shift navbar links to the left by 20px */
+    position: relative;
+    right: 70px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black; /* Text color for links */
+    position: relative; /* Position relative for pseudo-element */
+    padding: 10px; /* Padding for better click area */
+}
+
+.navbar-links a:hover::after {
+    content: ''; /* Pseudo-element for underline */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Position at the bottom of the text */
+    height: 3px; /* Height of the underline */
+    background-color: black; /* Color of the underline */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Transition for smooth effect */
+}
+
+.navbar-links a.active {
+    color: #1F6B45; /* Change color for active link */
+}
+
+.logout-button button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    bottom: 3.5px;box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
+
+}
+
+.logout-button button:hover {
+    opacity: 0.8;
+}
+
+.crt{
+    /* background-color: rgb(210, 210, 48); */
+    color: black;
+    height: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Softer shadow */
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* .navbar-links a {
+    transition: color 0.3s ease;
+} */

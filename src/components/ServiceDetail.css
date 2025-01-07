@@ -1,0 +1,40 @@
+/* src/ServiceDetail.css */
+.service-detail {
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+}
+
+.service-detail h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    /* padding-top: 100px; */
+}
+
+.service-detail p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.request-button {
+    height: 50px;
+    width: 150px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.request-button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}

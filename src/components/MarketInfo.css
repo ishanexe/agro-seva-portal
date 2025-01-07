@@ -1,0 +1,56 @@
+.filter-container {
+    display: flex;
+    gap: 10px; /* Space between inputs */
+    margin-bottom: 20px; /* Add space below the input area */
+    align-items: center; /* Center items vertically */
+}
+
+.filter-input {
+    padding: 10px;
+    border: 1px solid #78e3c0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    width: 200px; /* Set a fixed width for the inputs */
+}
+
+.filter-input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.fetch-button {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.fetch-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    cursor: pointer; /* Indicate sortable columns */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra stripes for table rows */
+}

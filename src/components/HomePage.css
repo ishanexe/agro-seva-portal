@@ -1,0 +1,94 @@
+/* src/components/HomePage.css */
+
+body {
+    background-color: #f9f9f9; /* Light background */
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    position: relative; /* Allows positioning of the video and content */
+    height: 500px; /* Increased height for a more prominent hero section */
+    overflow: hidden; /* Hide overflow to prevent content from being visible outside the box */
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: center;
+    align-items: center;
+    color: white; /* Default text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.hero-video {
+    position: absolute; /* Position video absolutely */
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Ensure video covers the full width */
+    min-height: 100%; /* Ensure video covers the full height */
+    object-fit: cover; /* Cover the container without distortion */
+    transform: translate(-50%, -50%); /* Center the video */
+    z-index: 1; /* Set z-index to behind the content */
+}
+
+.hero-content {
+    position: relative; /* Position content relative to the hero */
+    z-index: 2; /* Ensure content is on top of the video */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Text shadow for better readability */
+}
+
+.hero h2 {
+    font-size: 3em; /* Increase font size */
+    margin: 0; /* Remove default margin */
+}
+
+.hero p {
+    font-size: 1.5em; /* Increase font size for the subtitle */
+    margin-top: 10px; /* Space between heading and subtitle */
+    max-width: 600px; /* Limit width for readability */
+}
+
+.hero-button {
+    margin-top: 20px; /* Add some space above the button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Font size */
+    color: white; /* Text color */
+    background-color: black; /* Button background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.hero-button:hover {
+    background-color: #444; /* Darker shade on hover */
+}
+
+.features {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center items */
+    padding: 20px; /* Padding for the section */
+}
+
+.card {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Inner padding */
+    margin: 10px; /* Outer margin */
+    flex: 1 1 250px; /* Allow cards to grow and shrink */
+    max-width: 300px; /* Maximum width for each card */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.card h3 {
+    margin: 0 0 10px; /* Margin for title */
+    color: black; /* Black title color */
+}
+
+.card p {
+    color: #666; /* Grey color for description */
+}

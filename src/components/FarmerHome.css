@@ -1,0 +1,46 @@
+/* FarmerHome.css */
+.farmer-home {
+    background-color: #f0fff0; /* Light green background */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.farmer-home h1 {
+    color: #4CAF50; /* Dark green text */
+}
+
+.farmer-home ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.farmer-home li {
+    margin: 15px 0; /* Space between items */
+}
+
+.farmer-home a {
+    text-decoration: none; /* Remove underline */
+    color: #4CAF50; /* Dark green links */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.farmer-home a:hover {
+    color: #3e8e41; /* Darker green on hover */
+}
+
+/* src/components/FarmerHome.css */
+.cart {
+    margin-top: 20px;
+}
+
+.cart button {
+    background-color: #ffcc00; /* Color for the cart button */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
