@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 will require the log in and sign up page from here!
+along with small and detailed functionalities
